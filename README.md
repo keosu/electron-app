@@ -28,6 +28,15 @@ npm install
 # Run the app
 npm start
 ```
+## Package
+```sh
+npm install electron-packager -g
+
+electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> [optional flags...]
+
+# e.g. 
+electron-packager ./ --platform=win32 --arch=x64 --overwrite
+```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
