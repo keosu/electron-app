@@ -4,8 +4,4 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
-console.log('hello world!')
 
-document.body.addEventListener('click', () => {
-  console.log('hello vscode!')
-})

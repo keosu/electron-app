@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>H5 Games</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    ul,
+    li {
+      padding: 5px;
+      margin: 5px;
+      font-size: 24px;
+    }
+
+    .main_left {
+      width: 15%;
+      float: left;
+      cursor: pointer;
+    }
+
+    .main_right {
+      width: 100%;
+      border: 1px solid #a9da37;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- You can also require other files to run in this process -->
+
+
+  <div class="main_left" style="height:100%">
+    <ul>
+      <li src="cube/index.html">魔方</li>
+      <li src="mouseHit/index.html">打地鼠</li>
+      <li src="paoku/index.html">跑酷</li>
+      <li src="plane_fire/index.html">飞机大战</li>
+    </ul>
+  </div>
+  <div class="main_right">
+    <iframe frameborder="0" style="width:85%;height:100%" src="cube/index.html">
+    </iframe>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./src/renderer.js"></script>
+  <script>
+    $(function () {
+      $("li").on("click", function () {
+        console.log("click:");
+        var address = $(this).attr("src");
+        $("iframe").attr("src", address);
+      });
+    });
+  </script>
+</body>
+
+</html>
