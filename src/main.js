@@ -18,7 +18,7 @@ function createWindow() {
 
   // and load the index.html of the app.
   // mainWindow.loadFile('index.html')
-  mainWindow.loadFile('src/pages/index.html')
+  mainWindow.loadFile('src/web/index.html')
 
   // inoder to enable the vscode's debugger for Chrome, you must comment out this line 
   // Open the DevTools. 
